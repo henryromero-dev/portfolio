@@ -1,0 +1,9 @@
+@import '../../theme/colors.scss';
+
+.appcard {
+    background-color: rgb(248 250 252);
+    border-radius: 4px;
+    &.bordered {
+        border: 1px solid $lightgrey02;
+    }
+}

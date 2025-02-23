@@ -1,0 +1,41 @@
+:root {
+    --theme_primary_500: #BD5907;
+    --theme_secondary_500: #39c86b;
+    --theme_accent_500: #008ffe;
+    --theme_darkgrey_500: #4a4a4a;
+    --theme_success_500: #0E8155;
+    --theme_warning_500: #BD5907;
+    --theme_danger_500: #DC3545;
+    --theme_black_500: #212529;
+    --theme_blue_500: #215CAF;
+    --theme_stroke_500: #D4D4D8;
+    --theme_grey_500: #6C757D;
+    --theme_lightgrey_500: #CED4DA;
+    --theme_neutral_500: #CCCCCC;
+    --theme_grey_middle_500: #f2f2f2;
+    --theme_border_color_500: #909090;
+    --theme_lightgrey01_500: #F8F9FA;
+    --theme_lightgrey02_500: #dce0e4;
+}
+
+$primaryColor: var(--theme_primary_500);
+$secondaryColor: var(--theme_secondary_500);
+$accent: var(--theme_accent_500);
+$darkgrey: var(--theme_darkgrey_500);
+$success: var(--theme_success_500);
+$warning: var(--theme_warning_500);
+$danger: var(--theme_danger_500);
+$black: var(--theme_black_500);
+$blue: var(--theme_blue_500);
+$stroke: var(--theme_stroke_500);
+$grey: #6C757D;
+$white: #fff;
+$background: #d2d2d6;
+$disabled: #eee;
+$lightgrey: #CED4DA;
+$lightgrey01 : var(--theme_lightgrey01_500);
+$lightgrey02 : var(--theme_lightgrey02_500);
+$lightgrey03 : #92a3b2;
+$neutral: var(--theme_neutral_500);
+$borderColor: var(--theme_border_color_500);
+$info: $accent;

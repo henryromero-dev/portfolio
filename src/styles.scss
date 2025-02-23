@@ -1,0 +1,19 @@
+@import '/src/theme/breakpoints.scss';
+@import '/src/theme/colors.scss';
+@import '/src/theme/typography.scss';
+@import '/src/theme/utils.scss';
+
+
+@include respond-to(desktop) {
+    .container--standard {
+        width: 1200px !important;
+    }
+}
+
+p {
+    color: $darkgrey;
+}
+
+h1, h2, h6 {
+    color: $darkgrey;
+}
