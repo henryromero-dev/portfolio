@@ -13,7 +13,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <Router basename={'/henryromero'}>
-                <div className="app d-flex flex-column w-100 py-5">
+                <div className="app d-flex flex-column w-100 py-lg-5">
                     <Home />
                 </div>
             </Router>

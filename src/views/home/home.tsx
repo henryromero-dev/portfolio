@@ -25,8 +25,8 @@ const Home: React.FC = () => {
     };
 
     return (<div className="d-flex flex-column w-100 m-auto home">
-        <div className="d-flex w-100 mb-3 flex--container">
-            <div className="col-lg-8 pe-2 h-100">
+        <div className="d-flex w-100 mb-3 flex--container flex-wrap">
+            <div className="col-lg-8 col-12 pe-lg-2 profile">
                 <Card className="h-100">
                     <div className="d-flex align-items-center w-100">
                         <img className="profile" src="assets/img/profile.jfif" alt="profile" width={128} height={128} />
@@ -34,13 +34,13 @@ const Home: React.FC = () => {
                             <Typography variant="h1" className="m-0" sx={{...AppTheme.typography.heading02, fontWeight: AppTheme.fontWeights.semibold}}>Hello, I'm Henry!</Typography>
                             <Typography variant="h2" className="m-0" sx={AppTheme.typography.heading04}>Full-stack Developer</Typography>
                         </div>
-                        <div className="ms-auto col-2">
+                        <div className="ms-auto col-2 d-none d-lg-flex">
                             <a href="assets/cv.pdf" className="text-right" target="_blank" rel="noopener noreferrer">
                                 <Typography variant="body1" className="cv" sx={AppTheme.typography.desktop04}>Download CV</Typography>
                             </a>
                         </div>
                     </div>
-                    <Typography className="my-auto" sx={AppTheme.typography.desktop02}>
+                    <Typography className="my-auto py-4 py-lg-0" sx={AppTheme.typography.desktop02}>
                         I started in the world of programming at the age of fifteen and later studied systems engineering. I currently have eight years of professional experience in web application development. I am passionate about technology and innovation, so I am always in constant learning and developing new skills.
                         I have worked both independently and with various clients, receiving praise for my efficiency, work capacity, and commitment to quality.
                     </Typography>
@@ -57,10 +57,15 @@ const Home: React.FC = () => {
                         <a href="mailto:official.henryromero@gmail.com" className="ms-3">
                             <Email />
                         </a>
+                        <div className="ms-auto d-flex d-lg-none">
+                            <a href="assets/cv.pdf" className="text-right" target="_blank" rel="noopener noreferrer">
+                                <Typography variant="body1" className="cv" sx={AppTheme.typography.desktop02}>Download CV</Typography>
+                            </a>
+                        </div>
                     </div>
                 </Card>
             </div>
-            <div className="col-lg-4 ps-2">
+            <div className="col-lg-4 col-12 ps-lg-2">
                 <Card>
                     <Typography variant="h5" className="m-0 card__title" sx={{...AppTheme.typography.desktop01, fontWeight: AppTheme.fontWeights.medium}}>Technologies</Typography>
                     <div className="d-flex flex-wrap mt-3">
@@ -124,8 +129,8 @@ const Home: React.FC = () => {
                 </Card>
             </div>
         </div>
-        <div className="d-flex w-100">
-            <div className="col-lg-8 pe-2 projects">
+        <div className="d-flex w-100 flex-wrap-reverse flex-lg-wrap">
+            <div className="col-lg-8 col-12 pe-lg-2 projects">
                 <Card className="mb-3">
                     <Typography variant="h5" className="mb-3 card__title" sx={{...AppTheme.typography.desktop01, fontWeight: AppTheme.fontWeights.medium}}>Projects</Typography>
                     <Carousel 
@@ -136,7 +141,7 @@ const Home: React.FC = () => {
                         autoPlay={true}
                         autoPlaySpeed={30000}
                         keyBoardControl={true}
-                        removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                        removeArrowOnDeviceType={["mobile"]}
                         responsive={{
                             superLargeDesktop: {
                                 breakpoint: { max: 4000, min: 3000 },
@@ -156,14 +161,14 @@ const Home: React.FC = () => {
                             }
                         }}>
                         <div className="d-flex w-100 flex-wrap pb-3">
-                            <div className="col-6 pe-2 mb-3">
+                            <div className="col-lg-6 col-12 pe-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
                                             Criptomonedas.es
                                         </Typography>
-                                        <Link href="https://www.criptomonedas.es" target="_blank" rel="noopener noreferrer" className="project-link ms-auto text-decoration-none" sx={{...AppTheme.typography.desktop05, fontWeight: AppTheme.fontWeights.semibold}}>
-                                            Visit Project
+                                        <Link href="https://dev.altobloque.es" target="_blank" rel="noopener noreferrer" className="project-link ms-auto text-decoration-none" sx={{...AppTheme.typography.desktop05, fontWeight: AppTheme.fontWeights.semibold}}>
+                                            Visit Project (Dev env)
                                         </Link>
                                     </div>
                                     <Typography variant="subtitle1" sx={AppTheme.typography.desktop03}>
@@ -183,7 +188,7 @@ const Home: React.FC = () => {
                                     </div>
                                 </Card>
                             </div>
-                            <div className="col-6 ps-2 mb-3">
+                            <div className="col-lg-6 col-12 ps-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -209,7 +214,7 @@ const Home: React.FC = () => {
                                     </div>
                                 </Card>
                             </div>
-                            <div className="col-6 pe-2 mb-3">
+                            <div className="col-lg-6 col-12 pe-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -236,7 +241,7 @@ const Home: React.FC = () => {
                                     </div>
                                 </Card>
                             </div>
-                            <div className="col-6 ps-2 mb-3">
+                            <div className="col-lg-6 col-12 ps-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -261,7 +266,7 @@ const Home: React.FC = () => {
                             </div>
                         </div>
                         <div className="d-flex w-100 flex-wrap pb-3">
-                            <div className="col-6 pe-2 mb-3">
+                            <div className="col-lg-6 col-12 pe-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -288,7 +293,7 @@ const Home: React.FC = () => {
                                     </div>
                                 </Card>
                             </div>
-                            <div className="col-6 ps-2 mb-3">
+                            <div className="col-lg-6 col-12 ps-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -311,7 +316,7 @@ const Home: React.FC = () => {
                                     </div>
                                 </Card>
                             </div>
-                            <div className="col-6 pe-2 mb-3">
+                            <div className="col-lg-6 col-12 pe-lg-2 mb-3">
                                 <Card bordered={true}>
                                     <div className="d-flex align-items-center w-100 mb-2">
                                         <Typography variant="h5" sx={{...AppTheme.typography.desktop03, fontWeight: AppTheme.fontWeights.semibold}}>
@@ -394,7 +399,7 @@ const Home: React.FC = () => {
                     </div>
                 </Card>
             </div>   
-            <div className="col-lg-4 ps-2 timeline">
+            <div className="col-lg-4 col-12 ps-lg-2 timeline">
                 <Card>
                     <Typography variant="h5" className="mb-3 card__title" sx={{...AppTheme.typography.desktop01, fontWeight: AppTheme.fontWeights.medium}}>Timeline</Typography>
                     <Timeline position="right">
