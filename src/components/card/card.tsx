@@ -7,8 +7,8 @@ interface CardProps {
     className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ children, bordered = false, className }) => (
-    <div className={`d-flex w-100 flex-column appcard p-3 p-lg-4 ${bordered ? 'bordered' : ''} ${className}`}>
+const Card: React.FC<CardProps> = ({ children, bordered = false, className = '' }) => (
+    <div className={`appcard ${bordered ? 'bordered' : ''} ${className}`.trim()}>
         {children}
     </div>
 );
