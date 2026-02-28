@@ -107,7 +107,7 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                     <div className="hero-photo">
-                        <img src={`${PUB}/assets/img/profile.jfif`} alt="Henry Romero" width={156} height={156} />
+                        <img src={`${PUB}/assets/img/profile.jpg`} alt="Henry Romero" width={156} height={156} />
                     </div>
                 </div>
             </section>
